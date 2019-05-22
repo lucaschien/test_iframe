@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" >
+    <style>
+      body {
+        background-color: rgb(237, 237, 237);
+      }
+
+      .button-box {
+        background-color: #ccc;
+        height: 200px;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .button-box:after {
+        content: '';
+        clear: both;
+      }
+      .button-box li {
+        float: left;
+        width: 33.3%;
+        height: 100px;
+        border: 1px solid rgba(163, 165, 167, 0.899);
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-align: center;
+        line-height: 100px;
+      }
+      .main {
+        width: 640px;
+        min-height: 100vh;
+        margin: 0 auto;
+        background-color: #fff;
+      }
+
+      .im-frame {
+        border: 1px solid rgba(134, 135, 136, 0.899);
+        width: 100%;
+        height: calc(100vh - 200px);
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+
+      <iframe class="im-frame" src="https://sit.eyesmedia.com.tw/webapp/"></iframe>
+
+      <div class="button-box">
+        <li>aa</li>
+        <li>bb</li>
+        <li>cc</li>
+        <li>dd</li>
+        <li>ee</li>
+        <li>ff</li>
+      </div>
+
+    </div>
+    <script>
+      
+    </script>
+  </body>
+</html>
