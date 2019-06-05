@@ -10,6 +10,7 @@
     <style>
       body {
         background-color: rgb(237, 237, 237);
+        overscroll-behavior: none; /*停止手機網頁的scroll彈簧效果*/
       }
 
       .button-box {
@@ -69,10 +70,12 @@
 
     </div>
     <script>
-      function bodyScroll (event) {
-        event.preventDefault(); 
-      }
-      document.body.addEventListener('touchmove', bodyScroll, {passive: false});
+      (function (document, window) {
+        /*停止手機網頁的scroll彈簧效果*/
+        function bodyScroll (event) { event.preventDefault(); }
+        document.body.addEventListener('touchmove', bodyScroll, {passive: false});
+        document.querySelector('.im-frame').addEventListener('touchmove', bodyScroll, {passive: false});
+      })(document, window);
     </script>
   </body>
 </html>
